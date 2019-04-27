@@ -4,24 +4,31 @@
 html {
 	font-size: 16px;
 }
+
 .main-container {
 	background-image: url(../images/oldbarn.png);
 	background-size: cover;
 	background-repeat: no-repeat;
-	font-size: 40px;
+	
 }
 
 .container-on-top {
 	display: flex;
 	flex-direction: column; 
 	background-color: rgba(255,255,255,0.9);
-	padding: 3rem;
+	padding: 0 3rem;
 	
 }
 
 .row {
 	display: inline-flex;
-	/*min-height: 50rem;*/
+	
+	padding-top: 3rem;
+}
+
+.first-row h1 {
+	font-size: 4rem;
+	color: rgba(67,115,52,1.00);
 }
 
 .square {
