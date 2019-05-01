@@ -3,41 +3,62 @@
 
 html {
 	font-size: 16px;
+	font-family: 'Permanent Marker', cursive;
 }
 
 .main-container {
-	background-image: url(../images/oldbarn.png);
+	background-image: url("../images/collage5.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
-	
 }
 
 .container-on-top {
 	display: flex;
 	flex-direction: column; 
-	background-color: rgba(255,255,255,0.9);
+	
 	padding: 0 3rem;
 	
 }
 
 .row {
 	display: inline-flex;
-	
+	justify-content: space-around;
 	padding-top: 3rem;
+	background-color: rgba(255,255,255,0.7);
 }
 
+.first-row {
+	background-color: rgba(255,255,255,0.7);
+	margin: 4rem;
+	padding: 0.5rem;
+	border-radius: 0.5rem;	
+}
 .first-row h1 {
 	font-size: 4rem;
-	color: rgba(67,115,52,1.00);
+	margin-bottom: 0.5rem;
 }
 
-.square {
-	max-height: 10rem;
-	border: 5px solid white;
-	opacity: 0.1;
-  	transition: all ease 1.5s;
+.window h1 {
+	visibility: hidden;
 }
 
-.square:hover {
-  opacity: 1;
+.window {
+	background-image: url("../images/lucka.jpg");
+	background-size: contain;
+	background-repeat: no-repeat;
+	height: 20rem;
+	padding: 3rem;
+}
+
+.window:hover {
+	background: url("../images/lucka.jpg");
+	background: transparent;
+	-webkit-transition: background 5s;
+    -moz-transition: background 5s;
+    -o-transition: background 5s;
+    transition: background 5s;	
+}
+
+.window:hover h1 {
+	visibility: visible;
 }
